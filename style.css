@@ -91,18 +91,23 @@ header {
 }
 
 .nav-links>ul>li {
-    width: 100px;
+    width: 150px;
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     font-family: Montserrat;
     font-weight: medium;
     list-style: none;
 
 }
 
+
 .nav-links>ul>li>a {
     color: white;
     text-decoration: none;
+}
+.nav-links>ul>li>a:hover{
+    color: aqua;
+    text-decoration: underline;
 }
 
 .Welcome-section {
@@ -110,12 +115,7 @@ header {
     height: 800px;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
     position: relative;
-    /* border: 1px solid black; */
-    /* background: #121831 */
-    /* background-image: url(./Images/WelcomeSectionBg100.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    bg */
+    overflow: hidden;
 }
 
 .Welcome-section>img {
@@ -125,6 +125,7 @@ header {
 }
 
 .Welcome-section>div {
+    /* border: 1px solid black; */
     position: absolute;
     top: 0;
     width: 100%;
@@ -132,10 +133,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .Welcome-section>div>div {
     display: flex;
+    /* border: 1px solid blue; */
     align-items: self-start;
     justify-content: space-around;
     width: 90%;
@@ -154,7 +157,7 @@ header {
 }
 
 .Welcome-section>div>div>div>h2 {
-    font-size: 25;
+    font-size: 30px;
     font-family: 'ROG fonts';
     color: white;
     margin-top: 50px;
@@ -163,7 +166,7 @@ header {
 }
 
 .Welcome-section>div>div>div>h3 {
-    font-size: 25;
+    font-size: 25px;
     font-family: Montserrat;
     color: white;
     font-weight: medium;
@@ -175,9 +178,9 @@ header {
     color: white;
     background-color: transparent;
     border: 2px solid white;
-    height: 30px;
-    width: 120px;
-    font-size: 12px;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
     font-family: Montserrat;
     font-weight: 600;
 }
@@ -188,8 +191,6 @@ header {
     height: auto;
 
 }
-
-.Service-section {}
 
 .Service-section>h2 {
     font-family: 'ROG fonts';
@@ -262,11 +263,17 @@ header {
 
 .serv-Info>button {
     width: 200px;
-    height: 40px;
+    height: 50px;
     border: 1px solid white;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     background: transparent;
     color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.serv-Info>button:hover{
+    background-color: white;
+    color: purple;
 }
 
 .imgimg {
@@ -285,4 +292,251 @@ header {
     /* border: 3px solid pink; */
 }
 
+.content-hub {
+    width: 100vw;
+    height: 800px;
+    background: #82e1ff;
+    /* border: 2px solid lime; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+
+}
+
+.content-hub>div {
+    position: relative;
+    width: 100%;
+    height: 99%;
+    /* overflow-y: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #30059d;
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+
+
+}
+
+.content-hub>div>img {
+    width: 100%;
+    height: 100%;
+    opacity: 70%;
+}
+
+.cH-wrapper {
+    /* border: 10px solid purple; */
+    width: 100%;
+    height: auto;
+    position: absolute;
+    /* top: 0; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+}
+
+.cH-wrapper>h4 {
+    font-family: "ROG fonts";
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cH-wrapper>p {
+    font-family: MontSerrat;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.CH-Contents {
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    /* overflow-x: scroll; */
+}
+
+.CH-Contents>div {
+    /* width: 750px;
+    height: 375px;
+    background: white;
+    margin: 10px; */
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+
+}
+
+.buttons {
+    width: 100px;
+    height: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons>div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.content-hub>div>div>button {
+    border: 2px solid white;
+    border-radius: none;
+    background: transparent;
+    color: white;
+    width: 180px;
+    height: 60px;
+    margin-top: 20px;
+    font-family: MontSerrat;
+    font-size: 20px;
+}
+
+.contact-section {
+    width: 100vw;
+    height: auto;
+}
+
+.contact-section>h2 {
+    text-align: center;
+    font-family: "ROG fonts";
+    font-size: 25px;
+    color: white;
+    margin-top: 20px;
+}
+
+.contact-section>form {
+    /* border: 1px solid pink; */
+    width: 800px;
+    margin: auto;
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.contact-section>form>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section>form>div>input {
+    margin: auto;
+    margin-top: 20px;
+    width: 800px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    color: white;
+    border-bottom: 1px solid white;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+.contact-section>form>button {
+    width: 200px;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    border: none;
+    font-family: Montserrat;
+    font-size: 22px;
+
+}
+
+footer {
+
+    width: 100vw;
+    height: auto;
+    background: #005c79;
+    position: relative;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%)
+}
+
+footer>div {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.f-services>h6 {
+    font-size: 25px;
+    font-family: Montserrat;
+    color: white;
+}
+
+.f-services>div {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.f-services>div>a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 8px;
+    font-family: Montserrat;
+}
+
+.f-top {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid yellow; */
+}
+
+.f-top>p {
+    color: white;
+    font-size: 40px;
+    font-family: Montserrat;
+    margin-right: 10px;
+}
+
+.f-top>div>p {
+    color: white;
+    font-size: 20px;
+    font-family: Montserrat;
+
+}
+
+.f-mid>p {
+    font-size: 60px;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 700;
+   /* border: 1px solid yellow; */
+   padding: 0px;
+}
+
+.f-btm {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.copyRight{
+    text-align: center;
+    color: white;
+    font-family: Montserrat;
+    font-size: 18px;
+}
