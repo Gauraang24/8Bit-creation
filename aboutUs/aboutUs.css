@@ -25,19 +25,19 @@ main {
 
 header {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     position: relative;
     overflow: hidden;
     border: none;
     background-color: rgb(0, 14, 40, 50%);
-   
+
 }
 
 
 .header-bg {
     width: 100%;
     height: 100%;
-    
+
 
 }
 
@@ -162,23 +162,26 @@ header {
 
 .our-mission {
     width: 100vw;
-    height: 400px;
+    height: auto;
     transform: skewY(355.5deg);
     position: relative;
     overflow-y: hidden;
     border-bottom: 1px solid red;
     border-top: 1px solid red;
+    /* background-image: url("../Images/our-Mission-bg01.png");
+    opacity: 0.1; */
 
 }
 
 .our-mission>img {
     width: 100%;
+    height: 100%;
     opacity: 30%;
 }
 
 .our-mission>div {
     transform: skewY(-355.5deg);
-    /* opacity: 1; */
+    opacity: 1;
     width: 100%;
     height: 100%;
     margin: auto;
@@ -217,16 +220,26 @@ header {
     height: auto;
     background-color: ye;
     transform: skewY(355.5deg);
-    position: relative;
+    /* position: relative; */
     overflow-y: hidden;
     border-bottom: 1px solid red;
 }
+.choose-us::before{
+    background-image: url("../Images/why-choose-us.png");
+    background-size: cover;
+    background-position: center center;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
 
-.choose-us>img {
+/* .choose-us>img {
     width: 100%;
     height: auto;
     opacity: 40%;
-}
+} */
 
 .choose-us>div {
     transform: skewY(-355.5deg);
@@ -234,8 +247,8 @@ header {
     width: 100%;
     height: 100%;
     margin: auto;
-    position: absolute;
-    top: 0;
+    /* position: absolute;
+    top: 0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -247,6 +260,8 @@ header {
     width: 80vw;
     height: auto;
     margin-left: 50px;
+    /* border: 1px solid pink; */
+    margin: 50px;
 }
 
 .choose-us>div>div>h3 {
@@ -254,7 +269,7 @@ header {
     color: white;
     font-family: "ROG fonts";
     margin-bottom: 30px;
-    text-align: left;
+    text-align: center;
 }
 
 .choose-us>div>div>p {
@@ -263,7 +278,7 @@ header {
     font-family: Montserrat;
     font-weight: 700;
     margin-bottom: 30px;
-    text-align: left;
+    text-align: center;
 }
 
 .choose-us>div>div>ul {
@@ -276,13 +291,16 @@ header {
 
 .choose-us>div>div>ul>li {
     margin-bottom: 10px;
-    color: rgba(255, 255, 255, 0.745);
+    color: rgb(255, 255, 255);
+    /* text-decoration: underline; */
 }
 
 .choose-us>div>div>ul>li:hover {
     color: aqua;
     text-decoration: dashed;
 }
+
+
 
 .efficiency {
     width: 100vw;
@@ -293,14 +311,27 @@ header {
     overflow-y: hidden;
     padding: 0;
 }
-
-.efficiency>img {
+.efficiency::before{
+    background-image: url("../Images/effieciencybg.jpg");
+    background-size: cover;
+    content: "";
+    position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%;
+    opacity: 0.5;
+
+    
+}
+
+
+
+/* .efficiency>img {
+    width: 100%;
+    height: 100%;
     opacity: 40%;
     padding: 0;
     margin: 0;
-}
+} */
 
 .efficiency>div {
     transform: skewY(-355.5deg);
@@ -308,8 +339,8 @@ header {
     width: 100%;
     height: 100%;
     margin: auto;
-    position: absolute;
-    top: 0;
+    /* position: absolute;
+    top: 0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -321,6 +352,8 @@ header {
     width: 80vw;
     height: auto;
     margin-left: 50px;
+    /* border: 1px solid blue; */
+    margin-top: 50px;
 }
 
 .efficiency>div>div>h3 {
@@ -334,7 +367,7 @@ header {
 .efficiency>div>div>div {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
 }
 
 .efficiency>div>div>div>div>p {
@@ -352,6 +385,8 @@ header {
     text-align: left;
     margin-top: 50px;
     margin-bottom: 50px;
+    /* border: 1px solid white; */
+    margin-right: 10px;
 
 }
 
@@ -372,17 +407,17 @@ header {
     height: auto;
     background-color: ye;
     transform: skewY(355.5deg);
-    position: relative;
+    /* position: relative; */
     overflow-y: hidden;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
     border-top: 1px solid red;
+    /* border-bottom: 1px solid red; */
 }
 
 .team>img {
     width: 100%;
-    height: auto;
+    height: 100%;
     opacity: 100%;
-    
 }
 
 .team>div {
@@ -391,18 +426,24 @@ header {
     width: 100%;
     height: 100%;
     margin: auto;
-    position: absolute;
-    top: 0;
+    /* position: absolute; */
+    /* top: 0; */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    background-image: url("../Images/team-bg.png");
 
 }
 
 .team>div>div {
     width: 80vw;
-    height: auto;
+    height: 100%;
+    margin-top: 70px;
+    /* border: 1px solid white; */
+    margin-bottom: 50px;
 }
 
 .team>div>div>h3 {
@@ -415,6 +456,7 @@ header {
 }
 
 .team>div>div>div {
+    height: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -424,6 +466,7 @@ header {
 .team>div>div>div>div {
     margin: 20px 20px;
     width: 520px;
+    height: auto;
 }
 
 .team>div>div>div>div>h6 {
@@ -442,11 +485,12 @@ header {
     justify-content: center;
     align-items: center;
 }
-.team>div>div>div>div>div>img{
+
+.team>div>div>div>div>div>img {
     width: 480px;
     height: 480px;
     border-radius: 50%;
-    box-shadow: 0 0px 30px  rgba(255, 0, 0, 0.4);
+    box-shadow: 0 0px 30px rgba(255, 0, 0, 0.4);
 
 }
 
@@ -456,6 +500,7 @@ header {
     color: white;
     margin-top: 20px;
 }
+
 footer {
 
     width: 100vw;
@@ -466,7 +511,7 @@ footer {
 }
 
 footer>div {
-    
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -522,7 +567,7 @@ footer>div {
     font-family: Montserrat;
     font-weight: 700;
 
-   padding: 0px;
+    padding: 0px;
 }
 
 .f-btm {
@@ -532,9 +577,162 @@ footer>div {
     margin-top: 5px;
 }
 
-.copyRight{
+.copyRight {
     text-align: center;
     color: white;
     font-family: Montserrat;
     font-size: 18px;
+}
+
+@media (max-width: 1407px) {
+
+
+
+    .wel-info-sec-para>p {
+        font-size: 20px;
+        font-family: Montserrat;
+        margin-left: 10px;
+    }
+
+    .team>div>div>h3 {
+        font-size: 25px;
+    }
+
+    .team>div>div>div>div>div>img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .team>div>div>div>div>div {
+        width: 440px;
+        height: 440px;
+    }
+
+    .team>div>div>div>div {
+        /* border: 1px solid red; */
+        width: 440px;
+        height: 580px;
+    }
+
+    .team>div>div>div>div>h6 {
+        font-size: 25px;
+    }
+
+    .team>div>div>div>div>p {
+        font-size: 25px;
+    }
+
+    .efficiency>div>div>div>div>ul>li {
+        font-size: 18px;
+    }
+
+    .efficiency>div {
+        margin-top: 10px;
+    }
+    .efficiency>div>div>h3{
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 1200px){
+
+    .nav-links>ul>li{
+        width: 100px;
+        font-size: 16px;
+    }
+    .wel-info-sec{
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid yellow; */
+    }
+    .welcome-section>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .welcome-section>div>div>div{
+        /* border: 1px solid yellow; */
+        width: 80vw;
+        margin-bottom: 40px;
+        /* justify-content: center; */
+        /* align-self: center; */
+    }
+    .wel-info-sec-png>img{
+        width: 500px;
+    }
+    .our-mission>div>div{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .our-mission>div>div>h3{
+        font-size: 22px;
+    }
+    .our-mission>div>div>p{
+        font-size: 22px;
+    }
+
+
+
+    .team>div>div>h3 {
+        font-size: 22px;
+    }
+
+    .team>div>div>div>div>div>img {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .team>div>div>div>div>div {
+        /* border: 1px solid red; */
+        width: 320px;
+        height: 320px;
+    }
+
+    .team>div>div>div>div {
+        /* border: 1px solid red; */
+        width: 320px;
+        height: 440px;
+    }
+
+    .team>div>div>div>div>h6 {
+        font-size: 20px;
+    }
+
+    .team>div>div>div>div>p {
+        font-size: 20px;
+    }
+
+
+    .efficiency>div{
+        width: 90vw;
+    }
+
+    .efficiency>div>div>div>div{
+        /* border: 1px solid pink; */
+        width: 50%;
+    }
+    .efficiency>div>div>div>div>p{
+        font-size: 20px;
+        margin-right: 5px;
+        margin-left: 5px;
+        /* text-align: center; */
+        height: 50px;
+        /* border: 1px solid lime; */
+    }
+    .efficiency>div>div>div>div>ul>li{
+        font-size: 18px;
+        text-align: justify;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .efficiency>div>div{
+        margin-left: 0px;
+    }
 }

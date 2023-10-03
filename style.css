@@ -294,15 +294,13 @@ header {
 
 .content-hub {
     width: 100vw;
-    height: 800px;
+    height: 950px;
     background: #82e1ff;
     /* border: 2px solid lime; */
     display: flex;
     justify-content: center;
     align-items: center;
-
     clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
-
 }
 
 .content-hub>div {
@@ -351,6 +349,9 @@ header {
     font-size: 25px;
     margin-top: 20px;
     text-align: center;
+}
+.cH-wrapper>div{
+    width: 100%;
 }
 
 .CH-Contents {
