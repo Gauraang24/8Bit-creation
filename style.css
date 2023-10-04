@@ -105,30 +105,45 @@ header {
     color: white;
     text-decoration: none;
 }
-.nav-links>ul>li>a:hover{
+
+.nav-links>ul>li>a:hover {
     color: aqua;
     text-decoration: underline;
 }
 
 .Welcome-section {
     width: 100vw;
-    height: 800px;
+    height: auto;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
+
 }
 
-.Welcome-section>img {
+.Welcome-section::before {
+    background-image: url("./Images/WelcomeSectionBg100.jpg");
+    background-size: cover;
+    background-position: center center;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/* .Welcome-section>img {
     width: 100%;
     height: 100%;
     opacity: 50%;
-}
+} */
 
 .Welcome-section>div {
     /* border: 1px solid black; */
-    position: absolute;
-    top: 0;
+    /* position: absolute; */
+    /* top: 0; */
     width: 100%;
+    margin: 50px 0 60px 0;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -137,10 +152,12 @@ header {
 }
 
 .Welcome-section>div>div {
+    /* border: 1px solid green; */
     display: flex;
     /* border: 1px solid blue; */
     align-items: self-start;
     justify-content: space-around;
+    align-items: center;
     width: 90%;
     /* border: 1px solid lightcoral; */
 
@@ -186,7 +203,7 @@ header {
 }
 
 .Welcome-section>div>div>img {
-    width: 30%;
+    width: 45%;
     /* border: 1px solid red; */
     height: auto;
 
@@ -213,12 +230,14 @@ header {
 .service-items {
     width: 90vw;
     height: 400px;
-    /* border: 1px solid blue; */
+    /* border: 1px solid violet; */
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
     height: auto;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: white;
 
 }
@@ -232,7 +251,7 @@ header {
 }
 
 .serv-Info {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 
@@ -271,7 +290,8 @@ header {
     font-size: 20px;
     margin-top: 20px;
 }
-.serv-Info>button:hover{
+
+.serv-Info>button:hover {
     background-color: white;
     color: purple;
 }
@@ -350,16 +370,16 @@ header {
     margin-top: 20px;
     text-align: center;
 }
-.cH-wrapper>div{
+
+.cH-wrapper>div {
     width: 100%;
 }
 
 .CH-Contents {
     margin-top: 20px;
-    width: auto;
+    width: 80vw;
     height: auto;
-    display: flex;
-    flex-direction: row;
+    /* border: 1px solid blue; */
     /* overflow-x: scroll; */
 }
 
@@ -369,11 +389,11 @@ header {
     background: white;
     margin: 10px; */
     border-radius: 10px;
-    width: 500px;
-    height: 300px;
+    width: 950px;
+    height: 475px;
     background-color: white;
     text-align: center;
-    margin: 10px;
+    margin: auto auto;
 
 }
 
@@ -468,7 +488,7 @@ footer {
 }
 
 footer>div {
-    
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -524,8 +544,8 @@ footer>div {
     color: white;
     font-family: Montserrat;
     font-weight: 700;
-   /* border: 1px solid yellow; */
-   padding: 0px;
+    /* border: 1px solid yellow; */
+    padding: 0px;
 }
 
 .f-btm {
@@ -535,9 +555,219 @@ footer>div {
     margin-top: 5px;
 }
 
-.copyRight{
+.copyRight {
     text-align: center;
     color: white;
     font-family: Montserrat;
     font-size: 18px;
+}
+
+@media (max-width:1200px) {
+
+
+    .Welcome-section>div>div>div>h2 {
+        margin-top: 0px;
+    }
+
+    .Welcome-section>div>div>div {
+        margin-left: 0px;
+    }
+
+    .Welcome-section>div>div>div>h2 {
+        font-size: 25px;
+        text-align: justify;
+    }
+
+    .Welcome-section>div>div>div>h3 {
+        font-size: 22px;
+        /* text-align: justify; */
+    }
+
+    .Welcome-section>div>div>div>button {
+        margin-top: 0;
+    }
+
+    .Service-section>h2 {
+        font-size: 25px;
+        margin-bottom: 25px 0;
+    }
+
+    .Service-section>p {
+        font-size: 22px;
+    }
+
+    .serv-Info>h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        /* text-align: justify; */
+    }
+
+    .serv-Info {
+        /* border: 1px solid blue; */
+    }
+
+    .imgimg {
+        /* border: 1px solid blue; */
+    }
+
+    .serv-Info>div>h4 {
+        font-size: 20px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .serv-Info>div>p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .serv-Info>button {
+        margin-top: 0;
+    }
+
+    .CH-Contents>div {
+        width: 750px;
+        height: 375px;
+    }
+
+
+
+
+}
+
+@media (max-width:900px) {
+
+    .Welcome-section>div>div {
+        /* border: 1px solid yellow; */
+        flex-direction: column-reverse;
+    }
+
+    .Welcome-section>div>div>div {
+        /* border: 1px solid yellow; */
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .Welcome-section>div>div>img {
+        /* border: 1px solid rebeccapurple; */
+        width: 60%;
+    }
+
+    .Service-section>h2 {
+        margin: 25px 0;
+    }
+
+    .service-items {
+        flex-direction: column-reverse;
+        /* border: 1px solid white; */
+    }
+
+    .service-items-reverse {
+        flex-direction: column;
+    }
+
+
+    .serv-Info-Wrapper {
+        /* border: 1px solid yellow; */
+        width: 100%;
+        padding: 5px;
+
+    }
+
+    .serv-Info>button {
+        text-align: center;
+        margin: auto auto;
+    }
+
+    .imgimg {
+        border: 1px solid white;
+        border-top: 1px solid white;
+        width: 100%;
+    }
+
+    .serv-Info>h3 {
+        /* margin: auto auto; */
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .serv-Info>div>h4 {
+        text-align: center;
+    }
+
+    .serv-Info>div>p {
+        text-align: justify;
+    }
+
+    .CH-Contents>div {
+        width: 500px;
+        height: 300px;
+    }
+
+    .cH-wrapper>h4 {
+        margin-top: 0;
+    }
+
+    .contact-section>h2 {
+        width: 90vw;
+        margin: 20px auto;
+    }
+
+    .contact-section>form>div>input {
+        width: 530px;
+    }
+
+    .contact-section>form>div>input::placeholder {
+        font-size: 18px;
+    }
+
+    .contact-section>form {
+        width: 100vw;
+    }
+
+
+
+
+
+    footer>div {
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 50px;
+    }
+
+    .f-services {
+        width: 90vw;
+        margin: auto auto;
+        margin-bottom: 30px;
+    }
+
+    .f-services>div {
+        margin-top: 0;
+    }
+
+    .f-services>h6 {
+        margin-top: 8px;
+        margin-bottom: 20px;
+    }
+
+    .f-contact-links {
+        width: 90vw;
+        margin: auto auto;
+        margin-bottom: 30px;
+    }
+
+    .f-top {
+        justify-content: space-between;
+    }
+
+    .f-btm {
+        width: 250px;
+    }
+
+    .pop-up {
+        display: none;
+    }
 }

@@ -1000,11 +1000,7 @@ footer>div {
     .f-services {
         width: 90vw;
         margin: auto auto;
-        /* border: 1px solid blue; */
         margin-bottom: 30px;
-        /* display: flex;
-        justify-content: space-between;
-        align-items: flex-start; */
     }
 
     .f-services>div {
