@@ -728,10 +728,6 @@ footer>div {
         width: 100vw;
     }
 
-
-
-
-
     footer>div {
         flex-wrap: wrap;
         flex-direction: row;
@@ -770,4 +766,59 @@ footer>div {
     .pop-up {
         display: none;
     }
+}
+
+@media (max-width:600px) {
+
+    .Welcome-section>div>div>div>h2 {
+        font-size: 22px;
+    }
+
+    .Welcome-section>div>div>div>h3 {
+        font-size: 20px;
+    }
+
+    .Welcome-section>div>div>div>button {
+        font-size: 18px;
+    }
+
+    .Service-section>h2 {
+        font-size: 22px;
+    }
+
+    .Service-section>p {
+        font-size: 20px;
+    }
+
+    .serv-Info>h3 {
+        font-size: 22px;
+    }
+
+    .serv-Info>div>h4 {
+        font-size: 20px;
+    }
+
+    .serv-Info>button {
+        font-size: 18px;
+    }
+
+    .CH-Contents>div {
+        width: 400px;
+        height: 250px;
+    }
+
+    .content-hub {
+        height: 750px;
+    }
+    .contact-section>form>div>input{
+        width: 420px;
+    }
+    .contact-section>h2{
+        font-size: 22px;
+    }
+    .contact-section>form>button{
+        font-size: 18px;
+        margin: 30px 0;
+    }
+
 }
