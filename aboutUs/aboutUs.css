@@ -1118,3 +1118,13 @@ footer>div {
 
 
 }
+
+@media (max-width: 450px){
+   
+    .our-mission{
+        height: 365px;
+    }
+    .team>div>div>div>div{
+        height: 360px;
+    }
+}
