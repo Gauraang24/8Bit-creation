@@ -775,6 +775,7 @@ footer>div {
 
     .Welcome-section>div>div>div>h3 {
         font-size: 20px;
+        text-align: justify;
     }
 
     .Welcome-section>div>div>div>button {
@@ -819,5 +820,72 @@ footer>div {
         font-size: 18px;
         margin: 30px 0;
     }
+    .imgimg{
+        height: 250px;
+    }
+
 
 }
+
+@media (max-width: 450px){
+
+    .Welcome-section>div>div>div>h2{
+        font-size: 20px;
+    }
+    .Welcome-section>div>div>div>h3{
+        font-size: 18px;
+    }
+    .Welcome-section>div>div>div>button{
+        font-size: 16px;
+        width: 150px;
+        height: 40px;
+    }
+    .Service-section>h2{
+        font-size: 20px;
+    }
+    .Service-section>p{
+        font-size: 18px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .serv-Info>h3{
+        font-size: 20px;
+    }
+    .serv-Info>div>h4{
+        font-size: 18px;
+    }
+    .serv-Info>div>p{
+        font-size: 16px;
+    }
+    .serv-Info>button{
+        font-size: 16px;
+    }
+    /* .cH-wrapper>h4{
+        margin-top: 20px;
+    } */
+    .CH-Contents>div{
+        width: 320px;
+        height: 200px;
+    }
+    .CH-Contents{
+        margin-top: 0;
+    }
+    .cH-wrapper>h4{
+        font-size: 20px;
+    }
+    .cH-wrapper>p{
+        font-size: 18px;
+        margin: 10px auto;
+    }
+    .content-hub{
+        height: 600px;
+    }
+    .contact-section>h2{
+        font-size: 20px;
+    }
+    .contact-section>form>div{
+        width: 320px;
+    }
+}
+
