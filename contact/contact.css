@@ -433,3 +433,19 @@ footer>div {
         font-size: 18px;
     }
 }
+
+@media (max-width:450px){
+   
+    .inputField>div>form{
+        width: 330px;
+    }
+    .contact-info>div>h2{
+        font-size: 20px;
+    }
+    .contact-info>div>div>p{
+        font-size: 18px;
+    }
+    footer>div{
+        margin-top: 80px;
+    }
+}
