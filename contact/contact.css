@@ -319,49 +319,56 @@ footer>div {
 
 @media (max-width: 900px) {
 
-    .welcome-section>h2>span{
+    .welcome-section>h2>span {
         font-size: 25px;
     }
-    .welcome-section>h2{
+
+    .welcome-section>h2 {
         font-size: 25px;
         margin: 50px auto;
     }
 
-    .inputField>div>form{
+    .inputField>div>form {
         width: 550px;
         margin: 0 auto;
     }
-    .inputField>div>form>div>input{
-        width: 100%;
-    }
-    .inputField>div>form>div{
+
+    .inputField>div>form>div>input {
         width: 100%;
     }
 
-    .inputField>div>h2{
+    .inputField>div>form>div {
+        width: 100%;
+    }
+
+    .inputField>div>h2 {
         font-size: 25px;
     }
-    .inputField>div>form>div>input::placeholder{
+
+    .inputField>div>form>div>input::placeholder {
         font-size: 20px;
     }
-    
-    .contact-info{
+
+    .contact-info {
         flex-direction: column;
     }
-    .contact-info{
+
+    .contact-info {
         height: auto;
     }
-    .contact-info>div{
+
+    .contact-info>div {
         margin: 15px;
     }
 
-    .contact-info>div>h2{
+    .contact-info>div>h2 {
         border-bottom: 1px solid white;
         width: 50%;
         margin: auto auto;
         padding: 10px 0;
         margin-bottom: 15px;
     }
+
     footer>div {
         flex-wrap: wrap;
         flex-direction: row;
@@ -401,20 +408,28 @@ footer>div {
 }
 
 @media (max-width:600px) {
-    .welcome-section>h2{
+    .welcome-section>h2 {
         margin: 30px auto;
         font-size: 20px;
     }
-    .welcome-section>h2>span{
+
+    .welcome-section>h2>span {
         font-size: 22px;
     }
-    .inputField>div>h2{
+
+    .inputField>div>h2 {
         font-size: 22px;
     }
-    .inputField>div>form{
+
+    .inputField>div>form {
         width: 420px;
     }
-    .inputField>div>form>input::placeholder{
-        font-size: 10px;
+
+    .inputField>div>form>div>input {
+        font-size: 18px;
+    }
+
+    .inputField>div>form>div>input::placeholder {
+        font-size: 18px;
     }
 }
