@@ -378,11 +378,12 @@ header {
     margin-top: 20px;
     width: 80vw;
     height: auto;
+    display: flex;
     /* border: 1px solid blue; */
     /* overflow-x: scroll; */
 }
 
-.CH-Contents>div {
+.CH-Contents>img {
     /* width: 750px;
     height: 375px;
     background: white;
@@ -393,7 +394,6 @@ header {
     background-color: white;
     text-align: center;
     margin: auto auto;
-
 }
 
 .buttons {
@@ -463,6 +463,10 @@ header {
     border-bottom: 1px solid white;
     font-family: Montserrat;
     font-size: 20px;
+}
+
+.contact-section>form>div>input:focus {
+    border: none;
 }
 
 .contact-section>form>button {
@@ -810,82 +814,99 @@ footer>div {
     .content-hub {
         height: 750px;
     }
-    .contact-section>form>div>input{
+
+    .contact-section>form>div>input {
         width: 420px;
     }
-    .contact-section>h2{
+
+    .contact-section>h2 {
         font-size: 22px;
     }
-    .contact-section>form>button{
+
+    .contact-section>form>button {
         font-size: 18px;
         margin: 30px 0;
     }
-    .imgimg{
+
+    .imgimg {
         height: 250px;
     }
 
 
 }
 
-@media (max-width: 450px){
+@media (max-width: 450px) {
 
-    .Welcome-section>div>div>div>h2{
+    .Welcome-section>div>div>div>h2 {
         font-size: 20px;
     }
-    .Welcome-section>div>div>div>h3{
+
+    .Welcome-section>div>div>div>h3 {
         font-size: 18px;
     }
-    .Welcome-section>div>div>div>button{
+
+    .Welcome-section>div>div>div>button {
         font-size: 16px;
         width: 150px;
         height: 40px;
     }
-    .Service-section>h2{
+
+    .Service-section>h2 {
         font-size: 20px;
     }
-    .Service-section>p{
+
+    .Service-section>p {
         font-size: 18px;
         padding: 10px;
         margin-bottom: 10px;
     }
 
-    .serv-Info>h3{
+    .serv-Info>h3 {
         font-size: 20px;
     }
-    .serv-Info>div>h4{
+
+    .serv-Info>div>h4 {
         font-size: 18px;
     }
-    .serv-Info>div>p{
+
+    .serv-Info>div>p {
         font-size: 16px;
     }
-    .serv-Info>button{
+
+    .serv-Info>button {
         font-size: 16px;
     }
+
     /* .cH-wrapper>h4{
         margin-top: 20px;
     } */
-    .CH-Contents>div{
+    .CH-Contents>div {
         width: 320px;
         height: 200px;
     }
-    .CH-Contents{
+
+    .CH-Contents {
         margin-top: 0;
     }
-    .cH-wrapper>h4{
+
+    .cH-wrapper>h4 {
         font-size: 20px;
     }
-    .cH-wrapper>p{
+
+    .cH-wrapper>p {
         font-size: 18px;
         margin: 10px auto;
     }
-    .content-hub{
+
+    .content-hub {
         height: 600px;
     }
-    .contact-section>h2{
+
+    .contact-section>h2 {
         font-size: 20px;
     }
-    .contact-section>form>div{
+
+    .contact-section>form>div {
         width: 320px;
     }
 }
-
